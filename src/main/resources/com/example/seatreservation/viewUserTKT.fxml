@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.layout.AnchorPane?>
+
+
+<AnchorPane prefHeight="555.0" prefWidth="825.0" style="-fx-background-color: #12040c;" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.seatreservation.ViewUserTKT">
+    <children>
+        <ListView fx:id="lvTickets" layoutX="91.0" layoutY="68.0" prefHeight="418.0" prefWidth="644.0" style="-fx-background-color: #bcb8b8;" />
+    </children>
+</AnchorPane>

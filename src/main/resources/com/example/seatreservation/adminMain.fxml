@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="518.0" prefWidth="910.0" style="-fx-background-color: #12040c;" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.seatreservation.AdminMainController">
+   <children>
+      <Button fx:id="newHallBTN" layoutX="14.0" layoutY="474.0" mnemonicParsing="false" onAction="#newHALL" style="-fx-background-color: #cf3f32;" text="New hall" textFill="WHITE" />
+      <Button fx:id="newMovieBTN" layoutX="189.0" layoutY="474.0" mnemonicParsing="false" onAction="#newMOVIE" style="-fx-background-color: #cf3f32;" text="New movie" textFill="WHITE">
+         <opaqueInsets>
+            <Insets />
+         </opaqueInsets></Button>
+      <Button fx:id="newPartyBTN" layoutX="364.0" layoutY="474.0" mnemonicParsing="false" onAction="#newParty" style="-fx-background-color: #cf3f32;" text="New party" textFill="WHITE" />
+      <Button fx:id="refreshBTN" layoutX="781.0" layoutY="473.0" mnemonicParsing="false" onAction="#updateDisplay" prefHeight="26.0" prefWidth="62.0" style="-fx-background-color: #cf3f32;" text="Refresh" textFill="WHITE" />
+      <ListView fx:id="hallsList" layoutX="14.0" layoutY="14.0" prefHeight="446.0" prefWidth="175.0" style="-fx-background-color: #bcb8b8;" />
+      <ListView fx:id="moviesList" layoutX="189.0" layoutY="14.0" prefHeight="446.0" prefWidth="175.0" style="-fx-background-color: #bcb8b8;" />
+      <ListView fx:id="partiesList" layoutX="364.0" layoutY="14.0" prefHeight="446.0" prefWidth="175.0" style="-fx-background-color: #bcb8b8;" />
+      <ListView fx:id="usersList" layoutX="540.0" layoutY="14.0" prefHeight="446.0" prefWidth="175.0" style="-fx-background-color: #bcb8b8;" />
+      <Button fx:id="newUserBTN" layoutX="539.0" layoutY="474.0" mnemonicParsing="false" onAction="#newUser" style="-fx-background-color: #cf3f32;" text="New user" textFill="WHITE" />
+      <Button fx:id="previewHallBTN" layoutX="85.0" layoutY="474.0" mnemonicParsing="false" onAction="#prevHall" style="-fx-background-color: #cf3f32;" text="Preview" textFill="WHITE" />
+      <Button fx:id="previewMovieBTN" layoutX="277.0" layoutY="474.0" mnemonicParsing="false" onAction="#prevMovie" style="-fx-background-color: #cf3f32;" text="Preview" textFill="WHITE" />
+      <Button fx:id="previewPartyBTN" layoutX="441.0" layoutY="474.0" mnemonicParsing="false" onAction="#prevParty" style="-fx-background-color: #cf3f32;" text="Preview" textFill="WHITE" />
+      <Button fx:id="previewUserBTN" layoutX="614.0" layoutY="474.0" mnemonicParsing="false" onAction="#prevUser" style="-fx-background-color: #cf3f32;" text="Preview" textFill="WHITE" />
+      <ListView fx:id="ticketsList" layoutX="716.0" layoutY="14.0" prefHeight="446.0" prefWidth="175.0" style="-fx-background-color: #bcb8b8;" />
+      <Button fx:id="previewTKTbtn" layoutX="715.0" layoutY="473.0" mnemonicParsing="false" onAction="#prevTKT" style="-fx-background-color: #cf3f32;" text="Preview" textFill="WHITE" />
+   </children>
+</AnchorPane>

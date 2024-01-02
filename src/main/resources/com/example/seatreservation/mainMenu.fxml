@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.effect.ColorAdjust?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane fx:id="mainPanel" prefHeight="555.0" prefWidth="825.0" style="-fx-background-color: #12040c;" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.seatreservation.MainMenuController">
+   <children>
+      <Label layoutX="492.0" layoutY="238.0" text="ID" textFill="WHITE" />
+      <Label layoutX="492.0" layoutY="276.0" text="Password" textFill="WHITE" />
+      <TextField fx:id="tfID" layoutX="521.0" layoutY="234.0" prefHeight="26.0" prefWidth="204.0" />
+      <Button fx:id="loginButton" layoutX="587.0" layoutY="313.0" mnemonicParsing="false" onAction="#login" prefHeight="26.0" prefWidth="53.0" style="-fx-background-color: #cf3f32;" text="Login" textFill="WHITE" />
+      <PasswordField fx:id="pfPW" layoutX="557.0" layoutY="272.0" prefHeight="26.0" prefWidth="168.0" />
+      <Button fx:id="signUpButton" layoutX="668.0" layoutY="314.0" mnemonicParsing="false" onAction="#open" style="-fx-background-color: #cf3f32;" text="Sign up" textFill="WHITE" />
+      <ImageView fitHeight="566.0" fitWidth="428.0" layoutY="-11.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@movieTheatre.jpg" />
+         </image>
+      </ImageView>
+   </children>
+   <effect>
+      <ColorAdjust />
+   </effect>
+</AnchorPane>

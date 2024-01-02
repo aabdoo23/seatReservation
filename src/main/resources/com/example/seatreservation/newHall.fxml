@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Spinner?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="426.0" prefWidth="639.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.seatreservation.newHallController">
+   <children>
+      <ImageView fitHeight="466.0" fitWidth="695.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@theatre.jpg" />
+         </image>
+      </ImageView>
+      <AnchorPane fx:id="mainPanel" layoutX="24.0" layoutY="48.0" prefHeight="359.0" prefWidth="638.0" style="-fx-opacity: .92; -fx-background-color: #12040c;">
+         <children>
+            <Label layoutX="37.0" layoutY="46.0" text="ID" textFill="WHITE" />
+            <TextField fx:id="tfID" layoutX="76.0" layoutY="41.0" prefHeight="26.0" prefWidth="216.0" style="-fx-background-color: #bcb8b8;" />
+            <Label layoutX="340.0" layoutY="45.0" text="Rows" textFill="WHITE" />
+            <TextField fx:id="rowsSpinner" disable="true" layoutX="383.0" layoutY="41.0" prefHeight="26.0" prefWidth="70.0" style="-fx-background-color: #bcb8b8;" />
+            <Label layoutX="468.0" layoutY="45.0" text="Columns" textFill="WHITE" />
+            <Spinner fx:id="columnSpinner" layoutX="530.0" layoutY="41.0" prefHeight="26.0" prefWidth="78.0" style="-fx-background-color: #bcb8b8;" />
+            <Label layoutX="37.0" layoutY="101.0" text="Hall name" textFill="WHITE" />
+            <TextField fx:id="tfName" editable="false" layoutX="104.0" layoutY="97.0" prefHeight="26.0" prefWidth="186.0" style="-fx-background-color: #bcb8b8;" />
+            <Label layoutX="335.0" layoutY="101.0" text="Total number of seats:" textFill="WHITE" />
+            <Label layoutX="37.0" layoutY="150.0" text="First class number of rows:" textFill="WHITE" />
+            <Spinner fx:id="FCNspinner" layoutX="194.0" layoutY="146.0" prefHeight="26.0" prefWidth="94.0" style="-fx-background-color: #bcb8b8;" />
+            <Label layoutX="340.0" layoutY="150.0" text="First class seat price:" textFill="WHITE" />
+            <Label layoutX="30.0" layoutY="197.0" text="Second class number of rows" textFill="WHITE" />
+            <Spinner fx:id="SCNspinner" layoutX="194.0" layoutY="193.0" prefHeight="26.0" prefWidth="94.0" style="-fx-background-color: #bcb8b8;" />
+            <Label layoutX="340.0" layoutY="197.0" text="Second class seat price" textFill="WHITE" />
+            <Label layoutX="37.0" layoutY="252.0" text="Third class number of rows" textFill="WHITE" />
+            <Spinner fx:id="TCNspinner" layoutX="194.0" layoutY="247.0" prefHeight="26.0" prefWidth="94.0" style="-fx-background-color: #bcb8b8;" />
+            <Label layoutX="339.0" layoutY="251.0" text="Third class seat price" textFill="WHITE" />
+            <Button fx:id="saveButton" layoutX="272.0" layoutY="304.0" mnemonicParsing="false" onAction="#saveButtonC" prefHeight="26.0" prefWidth="94.0" style="-fx-background-color: #cf3f32;" text="Save" textFill="WHITE" />
+            <TextField fx:id="tfSeats" editable="false" layoutX="468.0" layoutY="96.0" prefHeight="26.0" prefWidth="142.0" style="-fx-background-color: #bcb8b8;" />
+            <Spinner fx:id="tfFCP" editable="true" layoutX="468.0" layoutY="147.0" prefHeight="26.0" prefWidth="140.0" style="-fx-background-color: #bcb8b8;" />
+            <Spinner fx:id="tfSCP" editable="true" layoutX="467.0" layoutY="193.0" prefHeight="26.0" prefWidth="140.0" style="-fx-background-color: #bcb8b8;" />
+            <Spinner fx:id="tfTCP" editable="true" layoutX="468.0" layoutY="248.0" prefHeight="26.0" prefWidth="140.0" style="-fx-background-color: #bcb8b8;" />
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>
